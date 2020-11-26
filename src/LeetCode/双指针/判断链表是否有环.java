@@ -23,7 +23,7 @@ public class 判断链表是否有环 {
         }
 
         ListNode l1 = head;
-        ListNode l2 = head.next;
+        ListNode l2 = head;
 
         while(l1!=null && l2!=null &&l2.next!=null){
             if(l1==l2){

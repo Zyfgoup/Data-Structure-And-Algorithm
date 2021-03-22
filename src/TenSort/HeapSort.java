@@ -1,4 +1,4 @@
-package Sort;
+package TenSort;
 
 import java.util.Arrays;
 

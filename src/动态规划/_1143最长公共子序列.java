@@ -13,7 +13,7 @@ import java.util.Arrays;
  *
  * 若这两个字符串没有公共子序列，则返回 0。
  */
-public class _1143最长公共子序列 {
+public class _1143最长公共子序列{
 
     //备忘录
     int[][] memo;

@@ -8,9 +8,9 @@ import java.util.Queue;
 /**
  * @Author Zyfgoup
  * @Date 2020/9/6 15:59
- * @Description  不需要从头插
+ * @Description  二叉树的层次遍历
  */
-public class _102二叉树的层次遍历 {
+public class _102{
     public List<List<Integer>> levelOrder(TreeNode root) {
         if(root ==null){
             return new ArrayList<>();
@@ -23,15 +23,15 @@ public class _102二叉树的层次遍历 {
 
         while(!queue.isEmpty()){
             int size = queue.size();
-            List<Integer> list = new ArrayList<>(); //放一层数的数据
+            List<Integer> list = new ArrayList<>(); //��һ����������
 
-            //逐个遍历当前层的节点
+            //���������ǰ��Ľڵ�
             for(int i=0;i<size;i++) {
-                //出队列 节点值放进list
+                //������ �ڵ�ֵ�Ž�list
                 TreeNode temp = queue.poll();
                 list.add(temp.val);
 
-                //子节点放进队列
+                //�ӽڵ�Ž�����
                 if(temp.left!=null){
                     queue.offer(temp.left);
                 }
@@ -40,7 +40,7 @@ public class _102二叉树的层次遍历 {
                 }
             }
 
-            //从头插
+            //��ͷ��
             ans.add(list);
         }
 

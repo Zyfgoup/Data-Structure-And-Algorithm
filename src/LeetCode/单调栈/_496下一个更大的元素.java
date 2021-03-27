@@ -41,7 +41,20 @@ public class _496下一个更大的元素 {
     }
 
 
-
+    /**
+     * 因为要找右边第一个大的数
+     * 那么就需要倒序遍历维护一个单调栈  因为栈后进先出  那么就符合题目要找数字右边第一个大于的数
+     * 假设当前数下标为i  下一位为j  那么栈里的元素肯定是[j,n-1]范围的
+     * 且由于是单调栈 栈底元素最大 这样每次拿栈顶的值与当前元素比较 如果小于 那么说明不符合条件 出栈
+     * 一直到找到栈顶的元素大于当前元素 那么就是i右边第一个大于nums[i]的数 如果栈为空则说明右边没有值大于 为-1
+     * 然后再把nums[i]入栈 因为此时栈顶的元素大于nums[i]或者栈为空  所以满足维护一个单调栈的条件
+     *
+     *
+     * 单调栈用法  感觉都是要找下标大于或者小于的某个大或者小的值
+     * @param nums1
+     * @param nums2
+     * @return
+     */
     public static int[] nextGreaterElement(int[] nums1, int[] nums2){
         int[] res = new int[nums1.length];
         Stack<Integer> stack = new Stack<>();

@@ -15,7 +15,9 @@ public class BinarySearch {
         int begin = k;
         int end = arr.length-1;
         while(begin<=end){
-            int mid = (begin+end)/2;
+
+            //防止溢出  int  (end+begin)   >>相当于/2
+            int mid = begin+(end-begin)>>2;
             if(arr[mid] == k)
                 return mid;
             if(arr[mid]<k){

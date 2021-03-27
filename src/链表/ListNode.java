@@ -6,12 +6,16 @@ package 链表;
  * @Description
  */
 public class ListNode {
-    Object data;
+    public int val;
+    public Object data;
     public ListNode next;
-    ListNode pre;
+    public ListNode pre;
 
     public ListNode(Object data){
         this.data = data;
+    }
+    public ListNode(){
+        super();
     }
 
 }

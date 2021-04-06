@@ -17,5 +17,6 @@ public class DequeTest {
         System.out.println(stack.peekLast());
         System.out.println(stack.removeLast());
 
+
     }
 }

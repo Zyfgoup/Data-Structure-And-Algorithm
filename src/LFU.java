@@ -2,6 +2,12 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 最不经常使用
+ * @param <k>
+ * @param <v>
+ */
+
 public class LFU<k, v> {
   private final int capcity;
 

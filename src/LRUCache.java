@@ -5,7 +5,7 @@ import java.util.Set;
 /**
  * @Author Zyfgoup
  * @Date 2020/8/20 20:06
- * @Description
+ * @Description  最近最少使用
  */
 public class LRUCache {
     private int capasity = 0;

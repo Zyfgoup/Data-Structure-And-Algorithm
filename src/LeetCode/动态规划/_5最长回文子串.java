@@ -1,4 +1,4 @@
-package LeetCode.Str;
+package LeetCode.动态规划;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * “ac”
  * 回文串是a
  */
-public class 最长回文子串 {
+public class _5最长回文子串 {
     public static void main(String[] args) {
         System.out.println(longestPalindrome("bb"));
 

@@ -1,5 +1,6 @@
 package Queue;
 
+import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -7,10 +8,20 @@ import java.util.LinkedList;
  * @Author Zyfgoup
  * @Date 2020/9/1 0:08
  * @Description
+ *
+ * Deque 用ArrayDeque实现类
+ *
+ * push是addFirst()
+ *
+ * poll是removeFirst()
+ * 其实是栈
+ *
+ * 建议使用 addLast()+pollLast()  == 栈
+ * addLast()+pollFirst == 队列
  */
 public class TestDeque {
     public static void main(String[] args) {
-       queue();
+       stack();
     }
 
 
@@ -26,12 +37,10 @@ public class TestDeque {
     }
 
     public static void queue(){
-        Deque<Integer> queue = new LinkedList<>();
-        queue.offerFirst(1);
-        queue.offerFirst(2);
-        queue.offerFirst(3);
-        queue.offerFirst(4);
-        queue.offerFirst(5);
+        Deque<Integer> queue = new ArrayDeque<>();
+       queue.push(1);
+       queue.push(2);
+       queue.push(3);
         System.out.println(queue.toString());
         System.out.println(queue.pollLast());
         System.out.println(queue.peekLast());

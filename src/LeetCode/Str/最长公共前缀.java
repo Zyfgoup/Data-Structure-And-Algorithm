@@ -27,7 +27,7 @@ public class 最长公共前缀 {
 
         for(int i=1;i<strs.length;i++){
             int j=0;
-            //比第一个字符串与第2、3.。。。比较
+            //比第一个字符串与第2
             for(;j<ans.length()&&j<minLen;j++){
                 if(ans.charAt(j)!=strs[i].charAt(j)){
                     break;
